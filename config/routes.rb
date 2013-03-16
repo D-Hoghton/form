@@ -8,6 +8,8 @@ Cocform::Application.routes.draw do
                              #        get "static_pages/contact"
    root to: 'staticpages#contactus'
 
+   match '/contactus', to: 'users#new'
+
  #  match '/contact', to: 'static_pages#contact'
 
 end
