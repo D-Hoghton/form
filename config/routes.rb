@@ -1,7 +1,7 @@
 Cocform::Application.routes.draw do
 #  get "staticpages/contactus"
 
-  get "users/new"
+  # get "users/new"
 
                              # get "static_pages/home"
 
