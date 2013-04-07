@@ -1,4 +1,5 @@
 Cocform::Application.routes.draw do
+    resources :users
 #  get "staticpages/contactus"
 
   # get "users/new"

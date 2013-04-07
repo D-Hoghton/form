@@ -1,4 +1,33 @@
 
 <% provide(:title, 'Contact Us') %>
 <h1>Contact Us</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div class="row">
+<div class="span6 offset3">
+  <%= form_for(@user) do |f| %>
+    <%= render 'shared/error_messages' %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+
+    <%= f.label :add, "Address" %>
+    <%= f.text_field :add %>
+
+    <%= f.label :qc, "Question" %>
+    <%= f.text_field :qc %>
+
+
+    <%= f.submit "Send", class: "btn btn-large btn-primary" %>
+  <% end %>
+ </div>
+</div>
+
+
+
+
+
+
+
+
